@@ -11,7 +11,7 @@ body {
   font-family: Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(36, 36, 36, 0.816);
+  background-color: rgb(255, 255, 255);
 }
 
 #root{
@@ -35,7 +35,7 @@ height: 100%;
 
 header{
   grid-area: header;
-  background-color: rgb(77, 0, 0);
+  background-color: rgb(75, 27, 1);
 }
 main{
   grid-area: main;
@@ -43,7 +43,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: rgb(77, 0, 0);
+  background-color: rgb(75, 27, 1);
   color: white;
 }
 
@@ -61,8 +61,46 @@ a{
 }
 
 a:hover{
-  color:rgb(255, 85, 6)
+  color:rgb(255, 85, 6);
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem grey solid;
+  font-size: 1.6rem;
+  font-family: Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.primary{
+  background-color: rgba(250, 128, 14, 0.713);
+}
+
+button:hover{
+  border: 0.1rem black solid
+}
+button.primary:hover {
+  background-color: rgb(233, 101, 0);
+}
+
+button.block {
+  width: 100%
+}
+
 
 /* Header  */
 
@@ -88,6 +126,17 @@ a.brand{
   justify-content: center;
 }
 
+.row.top {
+  align-items: flex-start;
+}
+
+.col-1 {
+flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+  }
+
 /* Images */
 
 img{
@@ -101,10 +150,14 @@ img.medium {
   
 }
 
+img.large{
+  width: 100%;
+}
+
 /* Card */
 
 .card{
-  border: 0.1rem rgb(77, 0, 0)solid;
+  border: 0.1rem rgb(75, 27, 1)solid;
   background-color: rgba(255, 255, 255, 0.782);
   border-radius: 0.5rem;
   margin: 1rem;
@@ -131,4 +184,14 @@ img.medium {
 
 .rating span:last-child{
   color:black
+}
+
+/* Alert */
+
+.success {
+  color: #20a020
+}
+
+.error {
+  color: #e80909
 }
